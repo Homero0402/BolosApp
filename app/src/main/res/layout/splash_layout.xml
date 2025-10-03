@@ -5,41 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
+    android:gravity="center_vertical"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="#305CDE"
-
-
-    >
+    android:background="#FD7057"
+    tools:context=".SplashActivity">
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        android:src="@drawable/clash">
-    </ImageView>
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Clash Royale"
-        android:layout_margin="20dp"
-        android:textSize="30dp"
-        android:textColor="#f2f5f7"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        ></TextView>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:text="Meire Bolos"
+        android:fontFamily="@font/bebasneueregular"
+        android:textColor="#FDE1CE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        android:indeterminate="true">
-
-    </com.google.android.material.progressindicator.CircularProgressIndicator>
-
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>
